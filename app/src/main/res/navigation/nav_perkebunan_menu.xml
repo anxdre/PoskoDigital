@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_perkebunan"
+    app:startDestination="@id/nav_perkebunan">
+
+    <fragment
+        android:id="@+id/nav_perkebunan"
+        android:name="net.anxdre.poskodigital.view.perkebunan.PerkebunanFragment"
+        android:label="Perkebunan"
+        tools:layout="@layout/fragment_perkebunan_detail">
+        <action
+            android:id="@+id/action_nav_perkebunan_to_nav_edit_perkebunan"
+            app:destination="@id/nav_edit_perkebunan" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_edit_perkebunan"
+        android:name="net.anxdre.poskodigital.view.perkebunaninput.PerkebunanInputFragment"
+        android:label="Edit Data Perkebunan"
+        tools:layout="@layout/fragment_perkebunan_input">
+        <argument
+            android:name="dataSet"
+            app:argType="net.anxdre.poskodigital.data.api.model.perkebunan.PerkebunanGula"
+            app:nullable="true" />
+        <argument
+            android:name="tanggal"
+            app:argType="string" />
+    </fragment>
+</navigation>

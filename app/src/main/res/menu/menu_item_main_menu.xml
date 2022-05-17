@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_main_menu"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Beranda" />
+
+    <item
+        android:id="@+id/nav_pejabat"
+        android:icon="@drawable/ic_people_black_24dp"
+        android:title="Pejabat Satgas Pangan" />
+
+    <item
+        android:id="@+id/nav_tugas"
+        android:icon="@drawable/ic_assignment_black_24dp"
+        android:title="Tugas Pokok" />
+
+    <group>
+        <item android:title="Update Kondisi Pangan Jatim">
+            <menu>
+                <item
+                    android:id="@+id/nav_disperindag"
+                    android:icon="@drawable/ic_assessment_black_24dp"
+                    android:title="Disperindag" />
+                <item
+                    android:id="@+id/nav_perkebunan"
+                    android:icon="@drawable/ic_assessment_black_24dp"
+                    android:title="Dinas Perkebunan" />
+                <item
+                    android:id="@+id/nav_pertanian"
+                    android:icon="@drawable/ic_assessment_black_24dp"
+                    android:title="Dinas Pertanian" />
+
+                <item
+                    android:id="@+id/nav_peternakan"
+                    android:icon="@drawable/ic_assessment_black_24dp"
+                    android:title="Dinas Peternakan" />
+                <item
+                    android:id="@+id/nav_bulog"
+                    android:icon="@drawable/ic_assessment_black_24dp"
+                    android:title="Bulog" />
+                <item
+                    android:id="@+id/nav_polda"
+                    android:icon="@drawable/ic_assessment_black_24dp"
+                    android:title="Polda" />
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item android:title="Lainnya">
+            <menu>
+                <item
+                    android:id="@+id/nav_kegiatan"
+                    android:icon="@drawable/ic_collections_black_24dp"
+                    android:title="Kegiatan &amp; Dokumentasi" />
+                <item
+                    android:id="@+id/nav_pengaduan"
+                    android:icon="@drawable/ic_insert_comment_black_24dp"
+                    android:title="Pengaduan" />
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_help_outline_black_24dp"
+                    android:title="tentang" />
+
+            </menu>
+        </item>
+    </group>
+</menu>

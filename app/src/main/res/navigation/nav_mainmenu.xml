@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_mainmenu"
+    app:startDestination="@id/nav_main_menu">
+    <fragment
+        android:id="@+id/nav_main_menu"
+        android:name="net.anxdre.poskodigital.view.mainmenu.MainMenuFragment"
+        android:label="Beranda"
+        tools:layout="@layout/fragment_main_menu" />
+    <fragment
+        android:id="@+id/nav_pejabat"
+        android:name="net.anxdre.poskodigital.view.pejabat.PejabatFragment"
+        android:label="Pejabat Satgas Pangan"
+        tools:layout="@layout/fragment_pejabat" />
+    <fragment
+        android:id="@+id/nav_tugas"
+        android:name="net.anxdre.poskodigital.view.tugas.TugasFragment"
+        android:label="Tugas Pokok"
+        tools:layout="@layout/fragment_tugas" />
+    <fragment
+        android:id="@+id/nav_bulog"
+        android:name="net.anxdre.poskodigital.view.bulog.BulogFragment"
+        android:label="Bulog"
+        tools:layout="@layout/fragment_bulog" >
+        <action
+            android:id="@+id/action_nav_bulog_to_bulogInput"
+            app:destination="@id/bulogInput"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_polda"
+        android:name="net.anxdre.poskodigital.view.polda.PoldaFragment"
+        android:label="Polda"
+        tools:layout="@layout/fragment_polda" />
+    <fragment
+        android:id="@+id/nav_kegiatan_input"
+        android:name="net.anxdre.poskodigital.view.kegiatan.KegiatanFragment"
+        android:label="Kegiatan &amp; Dokumentasi"
+        tools:layout="@layout/fragment_kegiatan" />
+    <fragment
+        android:id="@+id/nav_pengaduan"
+        android:name="net.anxdre.poskodigital.view.pengaduan.PengaduanFragment"
+        android:label="Pengaduan"
+        tools:layout="@layout/fragment_pengaduan" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="net.anxdre.poskodigital.view.about.AboutFragment"
+        android:label="Tentang"
+        tools:layout="@layout/fragment_about" />
+    <include app:graph="@navigation/nav_perkebunan_menu" />
+    <fragment
+        android:id="@+id/bulogInput"
+        android:name="net.anxdre.poskodigital.view.buloginput.BulogInput"
+        android:label="Input Data"
+        tools:layout="@layout/fragment_bulog_input">
+        <argument
+            android:name="dataSet"
+            app:argType="net.anxdre.poskodigital.data.api.model.bulog.ItemBulog"
+            app:nullable="true" />
+        <argument
+            android:name="tanggal"
+            app:argType="string" />
+        <argument
+            android:name="idKancab"
+            app:argType="string" />
+    </fragment>
+    <include app:graph="@navigation/nav_pertanian_menu" />
+    <navigation
+        android:id="@+id/nav_disperindag"
+        android:label="Disperindag"
+        app:startDestination="@id/nav_disperindag">
+        <fragment
+            android:id="@+id/nav_filter"
+            android:name="net.anxdre.poskodigital.view.filter.FilterFragment"
+            android:label="Filter"
+            tools:layout="@layout/fragment_filter" />
+        <fragment
+            android:id="@+id/nav_disperindag_admin"
+            android:name="net.anxdre.poskodigital.view.disperindagadmin.DisperindagAdmin"
+            android:label="Panel Admin Disperindag"
+            tools:layout="@layout/fragment_disperindag_admin">
+            <action
+                android:id="@+id/action_nav_disperindag_admin_to_nav_disperindag_input"
+                app:destination="@id/nav_disperindag_input"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:launchSingleTop="true"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_exit_anim"
+                app:popUpToInclusive="true" />
+        </fragment>
+        <fragment
+            android:id="@+id/nav_disperindag_input"
+            android:name="net.anxdre.poskodigital.view.disperindaginput.DisperindagInputFragment"
+            android:label="Tambah Data"
+            tools:layout="@layout/fragment_disperindag_input">
+            <argument
+                android:name="city"
+                android:defaultValue=" "
+                app:argType="string" />
+            <argument
+                android:name="date"
+                app:argType="string" />
+            <argument
+                android:name="id"
+                app:argType="string"
+                app:nullable="true" />
+            <argument
+                android:name="cityName"
+                app:argType="string" />
+            <argument
+                android:name="dataSet"
+                app:argType="net.anxdre.poskodigital.data.api.model.disperindag.DataDetailPerindag"
+                app:nullable="true" />
+        </fragment>
+        <fragment
+            android:id="@+id/nav_disperindag"
+            android:name="net.anxdre.poskodigital.view.disperindag.DisperindagWebBased"
+            android:label="Disperindag" />
+    </navigation>
+    <fragment
+        android:id="@+id/nav_peternakan"
+        android:name="net.anxdre.poskodigital.view.peternakan.PeternakanFragment"
+        android:label="Peternakan"
+        tools:layout="@layout/fragment_peternakan">
+        <action
+            android:id="@+id/action_nav_peternakan_to_peternakanInput"
+            app:destination="@id/peternakanInput"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/peternakanInput"
+        android:name="net.anxdre.poskodigital.view.pertenakaninput.PeternakanInput"
+        android:label="Input Data Peternakan"
+        tools:layout="@layout/fragment_peternakan_input">
+        <argument
+            android:name="dataSet"
+            app:argType="net.anxdre.poskodigital.data.api.model.peternakan.PeternakanItem$X0"
+            app:nullable="true" />
+        <argument
+            android:name="tanggal"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_kegiatan"
+        android:name="net.anxdre.poskodigital.view.kegiatan.KegiatanWebview"
+        android:label="Kegiatan"
+        tools:layout="@layout/fragment_kegiatan_webview">
+        <action
+            android:id="@+id/action_kegiatanWebview_to_nav_kegiatan"
+            app:destination="@id/nav_kegiatan_input" />
+    </fragment>
+</navigation>
