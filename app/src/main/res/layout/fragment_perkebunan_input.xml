@@ -152,176 +152,6 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="16dp"
-                        android:text="PTPN X"
-                        android:textColor="#fff"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                </RelativeLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_perkebunan_ptpnx1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Jumlah gula di pabrik"
-                        android:inputType="number"
-                        android:textColor="#000" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_perkebunan_ptpnx2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Jumlah gula di petani"
-                        android:inputType="number"
-                        android:textColor="#000" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginBottom="32dp">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_perkebunan_ptpnx3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Jumlah gula di pedagang"
-                        android:inputType="number"
-                        android:textColor="#000" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:layout_weight="1"
-            app:cardCornerRadius="10dp">
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="96dp"
-                    android:background="@color/colorAccent"
-                    android:padding="6dp">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="16dp"
-                        android:text="PTPN XI"
-                        android:textColor="#fff"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                </RelativeLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_perkebunan_ptpnxi1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Jumlah gula di pabrik"
-                        android:inputType="number"
-                        android:textColor="#000" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_perkebunan_ptpnxi2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Jumlah gula di petani"
-                        android:inputType="number"
-                        android:textColor="#000" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginBottom="32dp">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_perkebunan_ptpnxi3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Jumlah gula di pedagang"
-                        android:inputType="number"
-                        android:textColor="#000" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:layout_weight="1"
-            app:cardCornerRadius="10dp">
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="96dp"
-                    android:background="@color/colorAccent"
-                    android:padding="6dp">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="16dp"
                         android:text="PT. KEBON AGUNG"
                         android:textColor="#fff"
                         android:textSize="18sp"
@@ -714,6 +544,91 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/et_perkebunan_rmi3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Jumlah gula di pedagang"
+                        android:inputType="number"
+                        android:textColor="#000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="10dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:background="@color/colorAccent"
+                    android:padding="6dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:text="PT.SGN"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_perkebunan_sgn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Jumlah gula di pabrik"
+                        android:inputType="number"
+                        android:textColor="#000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_perkebunan_sgn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Jumlah gula di petani"
+                        android:inputType="number"
+                        android:textColor="#000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="32dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_perkebunan_sgn3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Jumlah gula di pedagang"

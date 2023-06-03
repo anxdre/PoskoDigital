@@ -7,14 +7,13 @@
     tools:context=".view.pejabat.PejabatFragment">
 
     <LinearLayout
-        android:id="@+id/tv_ketua_title"
         android:layout_width="match_parent"
         android:background="#F6F6F6"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/iv_ketua"
+            android:id="@+id/ll_ditreskrimsus"
             android:layout_width="180dp"
             android:layout_height="280dp"
             android:visibility="invisible"
@@ -37,12 +36,14 @@
                     android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_ketua_ditreskrimsus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:src="@drawable/direskrimsus" />
 
                 <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_ketua_ditreskrimsus"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -75,6 +76,7 @@
                     android:orientation="vertical">
 
                     <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_kepala_disperindag"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -85,6 +87,7 @@
                         android:textStyle="bold" />
 
                     <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_kepala_disperindag"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.5"
@@ -123,6 +126,7 @@
                         android:textStyle="bold" />
 
                     <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_pemimpin_bulog"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="6dp"
@@ -131,6 +135,7 @@
                         android:src="@drawable/pimpinan_bulog" />
 
                     <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_pemimpin_bulog"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -174,6 +179,7 @@
                         android:textStyle="bold" />
 
                     <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_kepala_pertanian"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="6dp"
@@ -182,6 +188,7 @@
                         android:src="@drawable/kadis_pertanian" />
 
                     <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_kepala_pertanian"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -215,6 +222,7 @@
                         android:textStyle="bold" />
 
                     <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_kepala_peternakan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="6dp"
@@ -223,6 +231,7 @@
                         android:src="@drawable/kadis_peternakan" />
 
                     <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_kepala_peternakan"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -259,18 +268,20 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp"
-                        android:text="Kepala Dinas pertanian dan Ketahanan Pangan Provinsi Jatim"
+                        android:text="Kepala Dinas perkebunan provinsi Jatim"
                         android:textAlignment="center"
                         android:textColor="#000"
                         android:textStyle="bold" />
 
                     <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_kepala_perkebunan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.5"
                         android:src="@drawable/kadis_perkebunan" />
 
                     <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_kepala_perkebunan"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"

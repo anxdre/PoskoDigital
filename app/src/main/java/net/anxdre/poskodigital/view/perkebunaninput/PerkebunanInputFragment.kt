@@ -67,13 +67,13 @@ class PerkebunanInputFragment : Fragment(), PerkebunanInputView {
         et_perkebunan_candi2.setText(dataSet.x0?.get(0)?.jumlahPetani)
         et_perkebunan_candi3.setText(dataSet.x0?.get(0)?.jumlahPedagang)
 
-        et_perkebunan_ptpnx1.setText(dataSet.x0?.get(1)?.jumlahPabrik)
-        et_perkebunan_ptpnx2.setText(dataSet.x0?.get(1)?.jumlahPetani)
-        et_perkebunan_ptpnx3.setText(dataSet.x0?.get(1)?.jumlahPedagang)
-
-        et_perkebunan_ptpnxi1.setText(dataSet.x0?.get(2)?.jumlahPabrik)
-        et_perkebunan_ptpnxi2.setText(dataSet.x0?.get(2)?.jumlahPetani)
-        et_perkebunan_ptpnxi3.setText(dataSet.x0?.get(2)?.jumlahPedagang)
+//        et_perkebunan_ptpnx1.setText(dataSet.x0?.get(1)?.jumlahPabrik)
+//        et_perkebunan_ptpnx2.setText(dataSet.x0?.get(1)?.jumlahPetani)
+//        et_perkebunan_ptpnx3.setText(dataSet.x0?.get(1)?.jumlahPedagang)
+//
+//        et_perkebunan_ptpnxi1.setText(dataSet.x0?.get(2)?.jumlahPabrik)
+//        et_perkebunan_ptpnxi2.setText(dataSet.x0?.get(2)?.jumlahPetani)
+//        et_perkebunan_ptpnxi3.setText(dataSet.x0?.get(2)?.jumlahPedagang)
 
         et_perkebunan_kebon1.setText(dataSet.x0?.get(3)?.jumlahPabrik)
         et_perkebunan_kebon2.setText(dataSet.x0?.get(3)?.jumlahPetani)
@@ -128,9 +128,9 @@ class PerkebunanInputFragment : Fragment(), PerkebunanInputView {
                     idDataItem,
                     idPemakaian,
                     "2",
-                    et_perkebunan_ptpnx1.text.toString(),
-                    et_perkebunan_ptpnx2.text.toString(),
-                    et_perkebunan_ptpnx3.text.toString(),
+                    "0",
+                    "0",
+                    "0",
                     tanggal!!
                 )
             )
@@ -140,9 +140,9 @@ class PerkebunanInputFragment : Fragment(), PerkebunanInputView {
                     idDataItem,
                     idPemakaian,
                     "3",
-                    et_perkebunan_ptpnxi1.text.toString(),
-                    et_perkebunan_ptpnxi2.text.toString(),
-                    et_perkebunan_ptpnxi3.text.toString(),
+                    "0",
+                    "0",
+                    "0",
                     tanggal!!
                 )
             )
@@ -203,6 +203,18 @@ class PerkebunanInputFragment : Fragment(), PerkebunanInputView {
                     et_perkebunan_rmi1.text.toString(),
                     et_perkebunan_rmi2.text.toString(),
                     et_perkebunan_rmi3.text.toString(),
+                    tanggal!!
+                )
+            )
+            data.add(
+                8,
+                GulaInput(
+                    idDataItem,
+                    idPemakaian,
+                    "9",
+                    et_perkebunan_sgn1.text.toString(),
+                    et_perkebunan_sgn2.text.toString(),
+                    et_perkebunan_sgn3.text.toString(),
                     tanggal!!
                 )
             )

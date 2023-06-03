@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "833608895575",
+    "firebase_url": "https://satgaspanganjatim-85bc7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "satgaspanganjatim-85bc7",
+    "storage_bucket": "satgaspanganjatim-85bc7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833608895575:android:a98d883ac97df19c2e2712",
+        "android_client_info": {
+          "package_name": "net.anxdre.poskodigital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833608895575-7jlj36v5nfvsr3p9kv8jlu3t6ilmgmnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsvH4fnGniGO_F1g7KqUabK1UJFelgiDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833608895575-7jlj36v5nfvsr3p9kv8jlu3t6ilmgmnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

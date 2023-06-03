@@ -53,6 +53,7 @@ class NavigationMenuActivity : AppCompatActivity() {
         return NavigationUI.navigateUp(navController, drawer_main_menu)
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         if (drawer_main_menu.isDrawerOpen(GravityCompat.START)) {
             drawer_main_menu.closeDrawer(GravityCompat.START)
